@@ -10,7 +10,9 @@ Este readme contiene parte de las actividades realizadas en el BOOTCAMP DE CORE-
 
 > Un lenguaje interpretado es un lenguaje de programación para el que la mayoría de sus implementaciones ejecuta las instrucciones directamente, sin una previa compilación del programa a instrucciones en lenguaje máquina.
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJzHvV0u1RY1X0xjY2fJndsCBEL14-eWapw&usqp=CAU " alt="drawing" width="350" heigth="350"/>
+#### ¿Java está compilado o interpretado, o ambos?
+
+> El lenguaje Java es a la vez compilado e interpretado. Con el compilador se convierte el código fuente que reside en archivos cuya extensión es . java, a un conjunto de instrucciones que recibe el nombre de bytecodes que se guardan en un archivo cuya extensión es . class.>
 
 ## SEMANA II  
 
