@@ -67,17 +67,17 @@ Dentro de este grupo se encuentran:
 >
 > El lenguaje ensamblador es un derivado del lenguaje maquina y esta formado por abreviaturas de letras y números llamadas. Con la aparición de este lenguaje se crearon los programas traductores para poder pasar los programas escritos en lenguaje ensamblador a lenguaje maquina. Como ventaja con respecto al código maquina es que los códigos fuentes eran mas cortos y los programas creados ocupaban menos memoria.
 >> Generaciones
-- **Primera generación:** lenguaje maquina.
-- **Segunda generación:** se crearon los primeros lenguajes ensambladores.
-- **Tercera generación:** se crean los primeros lenguajes de alto nivel. Ej. C#, Pascal, Cobol
-- **Cuarta generación:** son los lenguajes capaces de generar código por si solos, son los llamados RAD.
-- **Quinta generación:** aquí se encuentran los lenguajes orientados a la inteligencia artificial.
+>>- **Primera generación:** lenguaje maquina.
+>>- **Segunda generación:** se crearon los primeros lenguajes ensambladores.
+>>- **Tercera generación:** se crean los primeros lenguajes de alto nivel. Ej. C#, Pascal, Cobol
+>>- **Cuarta generación:** son los lenguajes capaces de generar código por si solos, son los llamados RAD.
+>>- **Quinta generación:** aquí se encuentran los lenguajes orientados a la inteligencia artificial.
 >>> Aclaraciones
->En la actualidad, se suele omitir los lenguajes de medio nivel, quedando asi los grupos:
->
->Alto Nivel -> Java, C#, Python, JavaScript
->
->Bajo Nivel -> C, C++
+>>> En la actualidad, se suele omitir los lenguajes de medio nivel, quedando asi los grupos:
+>>>
+>>> Alto Nivel -> Java, C#, Python, JavaScript
+>>>
+>>> Bajo Nivel -> C, C++
 
 
 ## SEMANA II 
