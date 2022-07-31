@@ -10,7 +10,7 @@ Este readme contiene parte de las actividades realizadas en el BOOTCAMP DE CORE-
 
 > Un lenguaje interpretado es un lenguaje de programación para el que la mayoría de sus implementaciones ejecuta las instrucciones directamente, sin una previa compilación del programa a instrucciones en lenguaje máquina.
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJzHvV0u1RY1X0xjY2fJndsCBEL14-eWapw&usqp=CAU " alt="drawing" width="200" heigth="200"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJzHvV0u1RY1X0xjY2fJndsCBEL14-eWapw&usqp=CAU " alt="drawing" width="800" heigth="800"/>
 
 ## SEMANA II  
 
