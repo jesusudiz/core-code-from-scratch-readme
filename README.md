@@ -4,6 +4,9 @@ Este readme contiene parte de las actividades realizadas en el BOOTCAMP DE CORE-
 
 ## SEMANA I - 
 
+#### Lenguaje de programación compilado vs lenguaje de programación interpretado. 
+
+> Un lenguaje compilado es un lenguaje de programación cuyas implementaciones son normalmente compiladores (traductores que generan código de máquina a partir del código fuente) y no intérpretes (ejecutores paso a paso del código fuente, donde no se lleva a cabo una traducción en la preejecución).
 
 
 ## SEMANA II - 
