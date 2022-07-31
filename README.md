@@ -105,4 +105,4 @@ Se le dará una cadena y tendrá que devolver la suma de todos los caracteres co
     return total.reduce((a,b)=>a + b,0)
     } 
     
-    uniTotal()
+    uniTotal("aaa") // 291
