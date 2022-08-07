@@ -82,7 +82,7 @@ Dentro de este grupo se encuentran:
 
 ## SEMANA II 
 
-### Ejericicio I - MULTIPLICAR 
+### Ejericicio : MULTIPLICAR 
 
 Cree una función que logre multiplicar dos valores.
 
@@ -92,7 +92,7 @@ Cree una función que logre multiplicar dos valores.
     multiply(5,2)// 10
  
 
-### Ejercicio II - TOTAL ASCII
+### Ejercicio:  TOTAL ASCII
 
 Se le dará una cadena y tendrá que devolver la suma de todos los caracteres como un int. La función debería poder manejar todos los caracter
 
@@ -106,3 +106,16 @@ Se le dará una cadena y tendrá que devolver la suma de todos los caracteres co
     } 
     
     uniTotal("aaa") // 291
+    
+    
+ ### Ejercicio : Obtener carácter de valor ASCII
+ 
+ Escriba una función get_char()/ getChar()que tome un número y devuelva el carácter ASCII correspondiente a ese valor.
+
+  Ejemplo:
+      get_char(65) //debe regresar: "A"
+      
+  
+![codigo de resultado](carbon (2).png)
+
+ 
