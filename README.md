@@ -169,3 +169,5 @@ Respuesta:
              exam > 75 && projects >= 5 ? 90 :
              exam > 50 && projects >= 2 ? 75 : 0
          }
+
+### Ejercicio: 
