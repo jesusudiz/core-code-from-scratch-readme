@@ -111,11 +111,30 @@ Se le dará una cadena y tendrá que devolver la suma de todos los caracteres co
  ### Ejercicio : Obtener carácter de valor ASCII
  
  Escriba una función get_char()/ getChar()que tome un número y devuelva el carácter ASCII correspondiente a ese valor.
-
-  Ejemplo:
+ Ejemplo:
       get_char(65) //debe regresar: "A"
       
-  
-![codigo de resultado](carbon (2).png)
-
+ Respuesta:
  
+     function getChar(c){
+     return String.fromCharCode(c)
+     }
+
+### Ejercicio: Adición binaria
+Implemente una función que sume dos números y devuelva su suma en binario. La conversión se puede hacer antes o después de la adición.
+
+El número binario devuelto debe ser una cadena.
+
+Ejemplos:(Entrada1, Entrada2 --> Salida (explicación)))
+
+1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
+5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
+
+Respuesta:
+
+    function addBinary(a,b) {
+    return (a + b).toString(2)
+    }
+    
+ 
+
