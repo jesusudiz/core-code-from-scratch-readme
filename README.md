@@ -148,18 +148,16 @@ Esta función debería devolver un número (calificación final). Hay cuatro tip
 90, si la calificación del examen es superior a 75 y si el número de proyectos completados es mínimo 5.
 75, si la calificación del examen es superior a 50 y si el número de proyectos completados es mínimo 2.
 0, en otros casos
+
 Ejemplos ( Entradas --> Salida ):
 
-100, 12 --> 100
-99, 0 --> 100
-10, 15 --> 100
-
-85, 5 --> 90
-
-55, 3 --> 75
-
-55, 0 --> 0
-20, 2 --> 0
+* 100, 12 --> 100
+* 99, 0 --> 100
+* 10, 15 --> 100
+* 85, 5 --> 90
+* 55, 3 --> 75
+* 55, 0 --> 0
+* 20, 2 --> 0
 *Utiliza Operadores Lógicos y de Comparación.
 
 Respuesta:
@@ -173,17 +171,17 @@ Respuesta:
 ### Ejercicio:Serie de signos de exclamación n.º 2: elimine todos los signos de exclamación del final de la oración
 
 Elimina todos los signos de exclamación del final de la oración.
+Ejemplos:
 
-* Ejemplos
--remove("Hi!") === "Hi"
--remove("Hi!!!") === "Hi"
--remove("!Hi") === "!Hi"
--remove("!Hi!") === "!Hi"
--remove("Hi! Hi!") === "Hi! Hi"
--remove("Hi") === "Hi"
+* remove("Hi!") === "Hi"
+* remove("Hi!!!") === "Hi"
+* remove("!Hi") === "!Hi"
+* remove("!Hi!") === "!Hi"
+* remove("Hi! Hi!") === "Hi! Hi"
+* remove("Hi") === "Hi"
 
 Respuesta: 
 
-    function -remove (string) {  
+    function * remove (string) {  
      return string.replace(/!+$/, '');
     }
