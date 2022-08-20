@@ -174,16 +174,16 @@ Respuesta:
 
 Elimina todos los signos de exclamación del final de la oración.
 
-Ejemplos
-remove("Hi!") === "Hi"
-remove("Hi!!!") === "Hi"
-remove("!Hi") === "!Hi"
-remove("!Hi!") === "!Hi"
-remove("Hi! Hi!") === "Hi! Hi"
-remove("Hi") === "Hi"
+* Ejemplos
+-remove("Hi!") === "Hi"
+-remove("Hi!!!") === "Hi"
+-remove("!Hi") === "!Hi"
+-remove("!Hi!") === "!Hi"
+-remove("Hi! Hi!") === "Hi! Hi"
+-remove("Hi") === "Hi"
 
 Respuesta: 
 
-    function remove (string) {  
+    function -remove (string) {  
      return string.replace(/!+$/, '');
     }
