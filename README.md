@@ -222,8 +222,33 @@ Respuesta:
         (p1 ==="paper" && p2 ==="scissors")? "Player 2 won!":
         (p1 === p2 )? "Draw!":false)
     }
-### Ejercicio:
+### Ejercicio: Bugger persistente.
+Escribe una función, persistence, que tome un parámetro positivo numy devuelva su persistencia multiplicativa, que es el número de veces que debes multiplicar los dígitos num hasta llegar a un solo dígito.
+
+Por ejemplo (Entrada --> Salida) :
+
+* 39 --> 3 (because 3*9 = 27, 2*7 = 14, 1*4 = 4 and 4 has only one digit)
+* 999 --> 4 (because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2)
+* 4 --> 0 (because 4 is already a one-digit number)
+
 Respuesta:
+
+    function persistence(num) {
+     let times = 0;
+     num = num.toString();
+         while (num.length > 1) {
+          times++;
+         num = num
+        .split('')
+        .map((a) => Number(a))
+        .reduce((a, b) => a * b)
+        .toString();
+         }
+    return times;
+    }
+
+
+
 ### Ejercicio:
 Respuesta:
 ### Ejercicio:
