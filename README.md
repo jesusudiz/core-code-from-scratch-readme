@@ -112,7 +112,7 @@ Se le dará una cadena y tendrá que devolver la suma de todos los caracteres co
  
  Escriba una función get_char()/ getChar()que tome un número y devuelva el carácter ASCII correspondiente a ese valor.
  Ejemplo:
-      get_char(65) //debe regresar: "A"
+ *  get_char(65) //debe regresar: "A"
       
  Respuesta:
  
@@ -127,8 +127,8 @@ El número binario devuelto debe ser una cadena.
 
 Ejemplos:(Entrada1, Entrada2 --> Salida (explicación)))
 
-1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
-5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
+* 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
+* 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 
 Respuesta:
 
@@ -185,3 +185,63 @@ Respuesta:
     function * remove (string) {  
      return string.replace(/!+$/, '');
     }
+
+### Ejercicio: Eliminador de vocales
+Cree una función llamada shortcutpara eliminar las vocales minúsculasa ( , e, i, o, u) en una cadena determinada.
+
+Ejemplos:
+
+* "hello"     -->  "hll"
+* "codewars"  -->  "cdwrs"
+* "goodbye"   -->  "gdby"
+* "HELLO"     -->  "HELLO"
+
+Respuesta:
+
+  rfunction shortcut(string) {
+  return string.replace(/[aeiou]/g, '');
+}
+### Ejercicio: Piedra Papel tijeras
+¡Vamos a jugar! ¡Tienes que devolver qué jugador ganó! En caso de empate devolución Draw!.
+
+Ejemplos (Entrada1, Entrada2 --> Salida):
+
+* "scissors", "paper" --> "Player 1 won!"
+* "scissors", "rock" --> "Player 2 won!"
+* "paper", "paper" --> "Draw!"
+
+Respuesta:
+
+    const rps = (p1, p2) => {
+  
+     return( (p1 ==="scissors" && p2 ==="paper")? 'Player 1 won!':
+        (p1 ==="paper" && p2 ==="rock")? 'Player 1 won!':
+        (p1 ==="rock" && p2 ==="scissors")? 'Player 1 won!':
+        (p1 ==="scissors" && p2 ==="rock")? "Player 2 won!":
+        (p1 ==="rock" && p2 ==="paper")? "Player 2 won!": 
+        (p1 ==="paper" && p2 ==="scissors")? "Player 2 won!":
+        (p1 === p2 )? "Draw!":false)
+    }
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
