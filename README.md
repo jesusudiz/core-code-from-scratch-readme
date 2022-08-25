@@ -249,14 +249,64 @@ Respuesta:
 
 
 
-### Ejercicio:
+### Ejercicio: Vacaciones VIII - Libre de impuestos
+
+El propósito de este kata es calcular cuántas botellas de whisky libre de impuestos tendrías que comprar para que el ahorro sobre el precio normal de la calle cubra efectivamente el costo de tus vacaciones.
+
+Se le dará el precio de venta al público (NormPrice), el descuento libre de impuestos (descuento) y el costo de las vacaciones.
+
+Por ejemplo, si una botella cuesta normalmente 10€ y el descuento en el duty free es del 10%, ahorrarías 1€ por botella. Si sus vacaciones costaron £500, la respuesta que debe devolver sería 500.
+
+Todas las entradas serán números enteros. Por favor, devuelva un número entero. Redondear a la baja.
+
 Respuesta:
-### Ejercicio:
+
+    function dutyFree(normPrice, discount, hol) {
+  return Math.floor(hol / ((discount * normPrice) / 100));
+}
+### Ejercicio: El doble de viejo
+
+Su función toma dos argumentos:
+
+* edad del padre actual (años)
+* edad actual de su hijo (años)
+
+Calcula cuántos años hace que el padre tenía el doble de la edad de su hijo (o dentro de cuántos años tendrá el doble).
+
+
 Respuesta:
-### Ejercicio:
+
+   function twiceAsOld(dadYearsOld, sonYearsOld) {
+   let calculo=(sonYearsOld*2)-dadYearsOld
+   return Math.abs(calculo)
+   }
+
+
+### Ejercicio:  Espaciado válido    
+Su tarea es escribir una función llamada valid_spacing()o validSpacing() que verifique si una cadena tiene un espacio válido. La función debe devolver trueo false(o el valor correspondiente en cada idioma).
+
+Para este kata, la definición de espaciado válido es un espacio entre palabras, sin espacios iniciales ni finales. Las palabras pueden ser cualquier secuencia consecutiva de caracteres sin espacio. A continuación se muestran algunos ejemplos de lo que debe devolver la función:
+
 Respuesta:
-### Ejercicio:
+
+    function validSpacing(s) {
+  if (s.length === 0) return true;
+  if (s[0] === ' ' || s[s.length - 1] === ' ') return false;
+  let aSpaces0 = s.split(' ');
+  for (let i = 0, length = aSpaces0.length; i < length; i++) {
+    if (aSpaces0[i] === '') return false;
+  }
+  return true;
+}
+### Ejercicio: Binario Falso
+
+Dada una cadena de dígitos, debe reemplazar cualquier dígito debajo de 5 con '0' y cualquier dígito 5 y superior con '1'. Devuelve la cadena resultante.
+
 Respuesta:
+   
+    function fakeBin(x) {
+    return x.split('').map(n => n < 5 ? 0 : 1).join('');
+    }
 ### Ejercicio:
 Respuesta:
 ### Ejercicio:
