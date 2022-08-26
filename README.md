@@ -334,10 +334,124 @@ Respuesta:
      if ( names.length >= 4) return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
 
     }
-### Ejercicio:
+### Ejercicio: Conteo de bits
+
+Escriba una función que tome un número entero como entrada y devuelva el número de bits que son iguales a uno en la representación binaria de ese número. Puede garantizar que la entrada no sea negativa.
+
+Ejemplo : la representación binaria de 1234es 10011010010, por lo que la función debería regresar 5en este caso
+
 Respuesta:
-### Ejercicio:
+
+    var countBits = function (n) {
+  return n
+    .toString(2)
+    .split('')
+    .reduce((total, val) => total + Number(val), 0);
+};
+### Ejercicio: Su pedido, por favor
+
+Su tarea es ordenar una cadena dada. Cada palabra en la cadena contendrá un solo número. Este número es la posición que debe tener la palabra en el resultado.
+
+Nota: Los números pueden ser del 1 al 9. Por lo tanto, 1 será la primera palabra (no 0).
+
+Si la cadena de entrada está vacía, devuelve una cadena vacía. Las palabras en la cadena de entrada solo contendrán números consecutivos válidos.
+
+Ejemplos:
+"is2 Thi1s T4est 3a"  -->  "Thi1s is2 3a T4est"
+"4of Fo1r pe6ople g3ood th5e the2"  -->  "Fo1r the2 g3ood 4of th5e pe6ople"
+""  -->  ""
 Respuesta:
+
+  function order(words) {
+ 
+  return words.split(' ').sort(
+    (w1, w2) => Number(w1.replace(/\D/g, '')) - Number(w2.replace(/\D/g, ''))
+  ).join(' ');
+}
+
+
+### Ejercicio: Latín de cerdo simple
+
+Mueva la primera letra de cada palabra al final de la misma, luego agregue "ay" al final de la palabra. Deje los signos de puntuación intactos.
+
+Ejemplos
+* pigIt('Pig latin is cool'); // igPay atinlay siay oolcay
+* pigIt('Hello world !');     // elloHay orldway !
+
+Respuesta:
+
+    function pigIt(str) {
+  var arrayWord = str.split(' ');
+  return arrayWord.map(function(word) {
+    var firstLetter = word.charAt(0);
+    return word.slice(1) + firstLetter + 'ay';
+  }).join(' ');
+}
+### Ejercicio: Contando Duplicados
+Cuente el número de duplicados
+Escriba una función que devuelva el recuento de caracteres alfabéticos y dígitos numéricos distintos que no distinguen entre mayúsculas y minúsculas que aparecen más de una vez en la cadena de entrada. Se puede suponer que la cadena de entrada contiene solo letras (tanto mayúsculas como minúsculas) y dígitos numéricos.
+
+Ejemplo
+* "abcde" -> 0 # no characters repeats more than once
+* "aabbcde" -> 2 # 'a' and 'b'
+* "aabBcde" -> 2 # 'a' occurs twice and 'b' twice (`b` and `B`)
+* "indivisibilidad" -> 1 # 'i' occurs six times
+* "Indivisibilidades" -> 2 # 'i' occurs seven times and 's' occurs twice
+* "aA11" -> 2 # 'a' and '1'
+* "ABBA" -> 2 # 'A' and 'B' each occur twice
+
+Respuesta:
+
+    function duplicateCount(text){
+     return text.toLowerCase().split('').filter(function(val, i, arr){
+     return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+    }).length;
+    }
+### Ejercicio: Decodificar el código Morse
+
+Este kata es parte de una serie sobre el código Morse. Después de resolver este kata, puede pasar al siguiente .
+
+En este kata tienes que escribir un decodificador de código Morse simple. Si bien el código Morse ahora es reemplazado en su mayoría por los canales de comunicación de voz y datos digitales, todavía se usa en algunas aplicaciones en todo el mundo.
+El código Morse codifica cada carácter como una secuencia de "puntos" y "guiones". Por ejemplo, la letra Ase codifica como ·−, la letra Qse codifica como −−·−y el dígito 1se codifica como ·−−−−. El código Morse no distingue entre mayúsculas y minúsculas, tradicionalmente se utilizan letras mayúsculas. Cuando el mensaje está escrito en código Morse, se usa un solo espacio para separar los códigos de los caracteres y 3 espacios para separar las palabras. Por ejemplo, el mensaje HEY JUDEen código Morse es ···· · −·−−   ·−−− ··− −·· ·.
+
+NOTA: Los espacios adicionales antes o después del código no tienen significado y deben ignorarse.
+
+Además de letras, dígitos y algunos signos de puntuación, hay algunos códigos de servicio especiales, el más notorio de ellos es la señal de socorro internacional SOS (que fue emitida por primera vez por Titanic ), que se codifica como ···−−−···. Estos códigos especiales se tratan como caracteres especiales únicos y, por lo general, se transmiten como palabras separadas.
+
+Su tarea es implementar una función que tome el código morse como entrada y devuelva una cadena descifrada legible por humanos.
+
+Por ejemplo:
+
+decodeMorse('.... . -.--   .--- ..- -.. .')
+//should return "HEY JUDE"
+NOTA: Para fines de codificación, debe usar caracteres ASCII .y -no caracteres Unicode.
+
+La tabla de códigos Morse está precargada para usted como un diccionario, siéntase libre de usarla:
+
+Coffeescript/C++/Go/JavaScript/Julia/PHP/Python/Ruby/TypeScript:MORSE_CODE['.--']
+C#: MorseCode.Get(".--")(regresa string)
+F#: MorseCode.get ".--"(regresa string)
+Elixir: @morse_codesvariable (de use MorseCode.Constants). Ignore la advertencia de variable no utilizada morse_codesporque ya no se usa y se conserva solo para soluciones antiguas.
+Olmo:MorseCodes.get : Dict String String
+Haskell: morseCodes ! ".--"(Los códigos están en un Map String String)
+Java:MorseCode.get(".--")
+kotlin: MorseCode[".--"] ?: ""oMorseCode.getOrDefault(".--", "")
+Raqueta: morse-code(una tabla hash)
+Óxido:MORSE_CODE
+Escala:morseCodes(".--")
+rápido: MorseCode[".--"] ?? ""oMorseCode[".--", default: ""]
+C: proporciona matrices paralelas, es decir, morse[2] == "-.-"paraascii[2] == "C"
+NASM: una tabla de punteros a los códigos morse y una lista correspondiente de símbolos ascii
+Todas las cadenas de prueba contendrían un código Morse válido, por lo que puede omitir la verificación de errores y excepciones. En C#, las pruebas fallarán si el código de la solución arroja una excepción, tenga esto en cuenta. Esto se debe principalmente a que, de lo contrario, el motor simplemente ignoraría las pruebas, lo que daría como resultado una solución "válida".
+
+¡Buena suerte!
+
+Después de completar este kata, puede intentar decodificar el código Morse, avanzado .
+Respuesta:
+
+    decodeMorse = function(morseCode){
+     return morseCode.trim().split(' ').map(a => MORSE_CODE[a] || ' ').join('').replace(/\s+/g, ' ');
+    }
 
 ### Ejercicio:
 Respuesta:
@@ -345,3 +459,12 @@ Respuesta:
 Respuesta:
 ### Ejercicio:
 Respuesta:
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+### Ejercicio:
+Respuesta:
+
+
+
